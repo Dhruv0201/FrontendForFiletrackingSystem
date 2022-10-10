@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>
+    Admin Dashboard
+  </title>
+  <!--     Fonts and icons     -->
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900|Roboto+Slab:400,700" />
+  <!-- Nucleo Icons -->
+  <link href="./../../assets/css/nucleo-icons.css" rel="stylesheet" />
+  <link href="./../../assets/css/nucleo-svg.css" rel="stylesheet" />
+  <!-- Font Awesome Icons -->
+  <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
+  <!-- Material Icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
+  <!-- CSS Files -->
+  <link id="pagestyle" href="./../../assets/css/material-dashboard.css?v=3.0.4" rel="stylesheet" />
+</head>
+<body >
+    <aside class="sidenav navbar navbar-vertical navbar-expand-xs border-0 border-radius-xl my-3 fixed-start ms-3   bg-gradient-dark" id="sidenav-main">
+      <div class="sidenav-header">
+        <i class="fas fa-times p-3 cursor-pointer text-white opacity-5 position-absolute end-0 top-0 d-none d-xl-none" aria-hidden="true" id="iconSidenav"></i>
+        <a class="navbar-brand m-0" href=" https://demos.creative-tim.com/material-dashboard/pages/dashboard " target="_blank">
+          <span class="ms-1 font-weight-bold text-white">District Panchayat-Patan</span>
+        </a>
+      </div>
+      <hr class="horizontal light mt-0 mb-2">
+      <div class="collapse navbar-collapse  w-auto " id="sidenav-collapse-main">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link text-white" href="./digital desk.html">
+              <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
+                <i class="material-icons opacity-10">dashboard</i>
+              </div>
+              <span class="nav-link-text ms-1">Digital Desk</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white active bg-gradient-primary" href="./physical_desk.html">
+              <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
+                <i class="material-icons opacity-10">table_view</i>
+              </div>
+              <span class="nav-link-text ms-1">Physical Desk</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white " href="./Track File.html">
+              <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
+                <i class="material-icons opacity-10">receipt_long</i>
+              </div>
+              <span class="nav-link-text ms-1">Track a file</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white " href="./makeauser.html">
+              <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
+                <i class="large material-icons">person_add</i>
+              </div>
+              <span class="nav-link-text ms-1">Create a User</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="./swapusers.html">
+              <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
+                <i class="large material-icons">swap_horiz</i>
+              </div>
+              <span class="nav-link-text ms-1">Handle Transfer</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </aside>
+    <main class="main-content position-relative max-height-vh-100 h-100 border-radius-lg ">
+      <!-- Navbar -->
+      <nav class="navbar navbar-main navbar-expand-lg px-0 mx-4 shadow-none border-radius-xl" id="navbarBlur"
+    data-scroll="true">
+    <div class="container-fluid py-1 px-3">
+        <div class="collapse navbar-collapse mt-sm-0 mt-2 me-md-0 me-sm-4" id="navbar">
+            <div class="ms-md-auto pe-md-3 d-flex align-items-center">
+            </div>
+            <ul class="navbar-nav  justify-content-end">
+                <li class="nav-item dropdown pe-2 " style="margin:10px;">
+                    <a href="javascript:;" class="nav-link text-body p-0 position-relative "
+                        id="dropdownMenuButton " data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="material-icons cursor-pointer">
+                            notifications
+                        </i>
+                        <span
+                            class="position-absolute top-5 start-100 translate-middle badge rounded-pill bg-danger border border-white small py-1 px-2">
+                            <span class="small">7</span>
+                            <span class="visually-hidden">unread notifications</span>
+                        </span>
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-end p-2 me-sm-n4 "
+                        aria-labelledby="dropdownMenuButton" data-bs-popper="static">
+                        <li class="mb-2">
+                            <a class="dropdown-item border-radius-md" href="javascript:;">
+                                <div class="d-flex align-items-center py-1">
+                                    <div class="ms-2">
+                                        <h6 class="text-sm font-weight-normal my-auto">
+                                            Notification!!!
+                                        </h6>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="mb-2">
+                            <a class="dropdown-item border-radius-md" href="javascript:;">
+                                <div class="d-flex align-items-center py-1">
+                                    <div class="ms-2">
+                                        <h6 class="text-sm font-weight-normal my-auto">
+                                            Notification!!!
+                                        </h6>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item border-radius-md" href="javascript:;">
+                                <div class="d-flex align-items-center py-1">
+                                    <div class="ms-2">
+                                        <h6 class="text-sm font-weight-normal my-auto">
+                                            Notification!!!
+                                        </h6>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item border-radius-md" href="javascript:;">
+                                <div class="d-flex align-items-center py-1">
+                                    <div class="ms-2">
+                                        <h6 class="text-sm font-weight-normal my-auto">
+                                            Notification!!!
+                                        </h6>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item border-radius-md" href="javascript:;">
+                                <div class="d-flex align-items-center py-1">
+                                    <div class="ms-2">
+                                        <h6 class="text-sm font-weight-normal my-auto">
+                                            Notification!!!
+                                        </h6>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item border-radius-md" href="javascript:;">
+                                <div class="d-flex align-items-center py-1">
+                                    <div class="ms-2">
+                                        <h6 class="text-sm font-weight-normal my-auto">
+                                            Notification!!!
+                                        </h6>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item border-radius-md" href="javascript:;">
+                                <div class="d-flex align-items-center py-1">
+                                    <div class="ms-2">
+                                        <h6 class="text-sm font-weight-normal my-auto">
+                                           Notification!!!
+                                        </h6>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item d-flex align-items-center">
+                    <a href="../pages/sign-in.html" class="nav-link text-body font-weight-bold px-0">
+                        <i class="fa fa-user me-sm-1"></i>
+                        <span class="d-sm-inline d-none">User Profile</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+      </nav>
+      <!-- End Navbar -->
+      <div class="container-fluid py-4">
+        <div class="row">
+          <div class="col-xl-3 col-sm-6 mb-xl-0 mb-4">
+            <div class="card">
+              <div class="card-header p-3 pt-2">
+                <div class="icon icon-lg icon-shape bg-gradient-primary shadow-primary text-center border-radius-xl mt-n4 position-absolute">
+                  <i class="material-icons opacity-10">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" fill="currentColor" class="bi bi-file-earmark-plus-fill" viewBox="0 0 16 16">
+                      <path d="M9.293 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0zM9.5 3.5v-2l3 3h-2a1 1 0 0 1-1-1zM8.5 7v1.5H10a.5.5 0 0 1 0 1H8.5V11a.5.5 0 0 1-1 0V9.5H6a.5.5 0 0 1 0-1h1.5V7a.5.5 0 0 1 1 0z"/>
+                    </svg>
+                  </i>
+                </div>
+                <div class="text-end pt-1">
+                  <h4 class="mb-0">Add a New File</h4>
+                </div>
+              </div>
+              <hr class="dark horizontal my-0">
+            </div>
+          </div>
+          <div class="col-xl-3 col-sm-6 mb-xl-0 mb-4">
+            <div class="card">
+              <div class="card-header p-3 pt-2">
+                <div class="icon icon-lg icon-shape bg-gradient-success shadow-success text-center border-radius-xl mt-n4 position-absolute">
+                  <i class="material-icons opacity-10">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" fill="currentColor" class="bi bi-file-earmark-arrow-down-fill" viewBox="0 0 16 16">
+                      <path d="M9.293 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0zM9.5 3.5v-2l3 3h-2a1 1 0 0 1-1-1zm-1 4v3.793l1.146-1.147a.5.5 0 0 1 .708.708l-2 2a.5.5 0 0 1-.708 0l-2-2a.5.5 0 0 1 .708-.708L7.5 11.293V7.5a.5.5 0 0 1 1 0z"/>
+                    </svg>
+                  </i>
+                </div>
+                <div class="text-end pt-1">
+                  <h4 class="mb-0">Add Existing File</h4>
+                </div>
+              </div>
+              <hr class="dark horizontal my-0">
+            </div>
+          </div>
+          <!-- <div class="col-xl-3 col-sm-6">
+            <div class="card">
+              <div class="card-header p-3 pt-2">
+                <div class="icon icon-lg icon-shape bg-gradient-info shadow-info text-center border-radius-xl mt-n4 position-absolute">
+                  <i class="material-icons opacity-10">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" fill="currentColor" class="bi bi-send-fill" viewBox="0 0 16 16">
+                      <path d="M15.964.686a.5.5 0 0 0-.65-.65L.767 5.855H.766l-.452.18a.5.5 0 0 0-.082.887l.41.26.001.002 4.995 3.178 3.178 4.995.002.002.26.41a.5.5 0 0 0 .886-.083l6-15Zm-1.833 1.89L6.637 10.07l-.215-.338a.5.5 0 0 0-.154-.154l-.338-.215 7.494-7.494 1.178-.471-.47 1.178Z"/>
+                    </svg>
+                  </i>
+                </div>
+                <div class="text-end pt-1">
+                  <h4 class="mb-0">Send a File</h4>
+                </div>
+              </div>
+              <hr class="dark horizontal my-0">
+            </div>
+          </div> -->
+        </div>
+        <!-- --------------------------------------------------------------------------------------------- -->
+        <div class="row mt-4">
+        </div>
+        <!-- -----------LIST      --------------------------------------------------------------------------------- -->
+            <div class="card">
+              <div class="card-header pb-0">
+                <div class="row">
+                  <div class="col-lg-6 col-7">
+                    <h6>List on files currently on your Physical Desk</h6>
+                  </div>
+                  <div class="col-lg-6 col-5 my-auto text-end">
+                  </div>
+                </div>
+              </div>
+              <!-- ----------------------------------------------------------------------------- -->
+              <div class="card-body px-0 pb-2">
+                <div class="table-responsive">
+                  <table class="table align-items-center mb-0">
+                    <thead>
+                      <tr>
+                        <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Subject</th>
+                        <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">Received From</th>
+                        <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Receiving Date</th>
+                        <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">File ID</th>
+                        <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Details</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>
+                          <div class="d-flex px-2 py-1">
+                            <div class="d-flex flex-column justify-content-center">
+                              <h6 class="mb-0 text-sm">xfdgvfh cxnxdicnax njtdvcsxsgc jntd</h6>
+                            </div>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="avatar-group mt-2">
+                            <h6>User 1</h6>
+                          </div>
+                        </td>
+                        <td class="align-middle text-center text-sm">
+                            <h6>30/9/2022</h6>
+                        </td>
+                        <td class="align-middle">
+                          <div class="progress-wrapper w-75 mx-auto">
+                            <div class="progress-info">
+                              <h6>123/409/08/45</h6>
+                            </div>
+                          </div>
+                        </td>
+                        <td class="align-middle text-center text-sm">
+                          <a class="nav-link" href="./individual file.html">
+                            <div>
+                              <button type="button" class="btn btn-outline-dark"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+                              </svg></button>
+                            </div>
+                          </a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="d-flex px-2 py-1">
+                            <div class="d-flex flex-column justify-content-center">
+                              <h6 class="mb-0 text-sm">drw gud  a rawetd u ji7ytir fsardy  k</h6>
+                            </div>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="avatar-group mt-2">
+                            <h6>User 2</h6>
+                          </div>
+                        </td>
+                        <td class="align-middle text-center text-sm">
+                          <h6>1/7/2022</h6>
+                        </td>
+                        <td class="align-middle">
+                          <div class="progress-wrapper w-75 mx-auto">
+                            <div class="progress-info">
+                              <h6>324/345/34/60</h6>
+                            </div>
+                          </div>
+                        </td>
+                        <td class="align-middle text-center text-sm">
+                          <a class="nav-link" href="./individual file3.html">
+                            <div>
+                              <button type="button" class="btn btn-outline-dark"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+                              </svg></button>
+                            </div>
+                          </a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="d-flex px-2 py-1">
+                            <div class="d-flex flex-column justify-content-center">
+                              <h6 class="mb-0 text-sm">sfd gsrds c h jtfhbersw vgfgr</h6>
+                            </div>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="avatar-group mt-2">
+                            <h6>tgre wsregrubjyf</h6>
+                          </div>
+                        </td>
+                        <td class="align-middle text-center text-sm">
+                          <h6>1/10/2022</h6>
+                        </td>
+                        <td class="align-middle">
+                          <div class="progress-wrapper w-75 mx-auto">
+                            <div class="progress-info">
+                              <div class="progress-percentage">
+                                <h6>672/126/23/40</h6>
+                              </div>
+                            </div>
+                          </div>
+                        </td>
+                        <td class="align-middle text-center text-sm">
+                          <a class="nav-link" href="./individual file4.html">
+                            <div>
+                              <button type="button" class="btn btn-outline-dark"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+                              </svg></button>
+                            </div>
+                          </a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="d-flex px-2 py-1">
+                            <div class="d-flex flex-column justify-content-center">
+                              <h6 class="mb-0 text-sm">fte wdats xz g jytr  dseryftruitnbrvdc</h6>
+                            </div>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="avatar-group mt-2">
+                            <h6>rewe asdx cffgttj</h6>
+                          </div>
+                        </td>
+                        <td class="align-middle text-center text-sm">
+                          <h6>4/9/2022</h6>
+                        </td>
+                        <td class="align-middle">
+                          <div class="progress-wrapper w-75 mx-auto">
+                            <div class="progress-info">
+                              <div class="progress-percentage">
+                                <h6>725/301/22/11</h6>
+                              </div>
+                            </div>
+                          </div>
+                        </td>
+                        <td class="align-middle text-center text-sm">
+                          <a class="nav-link" href="./individual file.html">
+                            <div>
+                              <button type="button" class="btn btn-outline-dark"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+                              </svg></button>
+                            </div>
+                          </a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="d-flex px-2 py-1">
+                            <div class="d-flex flex-column justify-content-center">
+                              <h6 class="mb-0 text-sm">asd c vydsaxzaxfs actggfvhd sxdsfdvg xsct</h6>
+                            </div>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="avatar-group mt-2">
+                            <h6>dvsxa hbdvcsxsa</h6>
+                          </div>
+                        </td>
+                        <td class="align-middle text-center text-sm">
+                          <h6>23/6/2021</h6>
+                        </td>
+                        <td class="align-middle">
+                          <div class="progress-wrapper w-75 mx-auto">
+                            <div class="progress-info">
+                              <div class="progress-percentage">
+                                <h6>100/123/27/83</h6>
+                              </div>
+                            </div>
+                          </div>
+                        </td>
+                        <td class="align-middle text-center text-sm">
+                          <a class="nav-link" href="./individual file.html">
+                            <div>
+                              <button type="button" class="btn btn-outline-dark"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+                              </svg></button>
+                            </div>
+                          </a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="d-flex px-2 py-1">
+                            <div class="d-flex flex-column justify-content-center">
+                              <h6 class="mb-0 text-sm">cdfs  axfafzaaaxrcrgbtuyr erurjhtyjvc</h6>
+                            </div>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="avatar-group mt-2">
+                            <h6>qw  rwcqqx</h6>
+                          </div>
+                        </td>
+                        <td class="align-middle text-center text-sm">
+                          <h6>21/8/2022</h6>
+                        </td>
+                        <td class="align-middle">
+                          <div class="progress-wrapper w-75 mx-auto">
+                            <div class="progress-info">
+                              <div class="progress-percentage">
+
+                                <h6>267/143/20/95</h6>
+                              </div>
+                            </div>
+                          </div>
+                        </td>
+                        <td class="align-middle text-center text-sm">
+                          <a class="nav-link" href="./individual file.html">
+                            <div>
+                              <button type="button" class="btn btn-outline-dark"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+                              </svg></button>
+                            </div>
+                          </a>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+        </div>
+        <footer class="footer py-4  ">
+        </footer>
+      </div>
+    </main>  
+    <!--   Core JS Files   -->
+    <!-- <script src="../assets/js/core/popper.min.js"></script>
+    <script src="../assets/js/core/bootstrap.min.js"></script>
+    <script src="../assets/js/plugins/perfect-scrollbar.min.js"></script>
+    <script src="../assets/js/plugins/smooth-scrollbar.min.js"></script>
+    <script src="../assets/js/plugins/chartjs.min.js"></script>
+     Github buttons -->
+    <!-- <script async defer src="https://buttons.github.io/buttons.js"></script> --> 
+  </body> 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+
+  </html>

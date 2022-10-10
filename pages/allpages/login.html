@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>
+    DDO office
+  </title>
+  <link rel="stylesheet" href="./login.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+</head>
+
+<body>
+  <section class="vh-100">
+    <div class="container-fluid h-custom">
+      <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class="col-md-9 col-lg-6 col-xl-5">
+          <div>
+            <img src="./../../assets/img/download (1).png" class="emblemimage img-fluid" alt="Sample image" width="150"
+              height="300" />
+          </div>
+          <div class="titleDDO">
+            <p style="font-size:40px;font-weight: bolder;">District Panchayat</p>
+            <h1 style="font-weight:bolder ;">Patan</h1>
+          </div>
+        </div>
+        <div class="col-md-8 col-lg-6 col-xl-4 offset-xl-1">
+          <form>
+            <div class="d-flex flex-row align-items-center justify-content-center justify-content-lg-start">
+              <p class="lead fw-normal mb-0 me-3">Login</p>
+            </div>
+
+            <div class="divider d-flex align-items-center my-4">
+            </div>
+
+            <!-- Email input -->
+            <div class="form-outline mb-4">
+              <input type="email" id="form3Example3" class="form-control form-control-lg"
+                placeholder="Enter a valid email address" />
+              <label class="form-label" for="form3Example3">Email address</label>
+            </div>
+
+            <!-- Password input -->
+            <div class="form-outline mb-3">
+              <input type="password" id="form3Example4" class="form-control form-control-lg"
+                placeholder="Enter password" />
+              <label class="form-label" for="form3Example4">Password</label>
+            </div>
+            <div>
+              <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example" name="roleLogin"
+                id="roleLogin">
+                <option value="userDigitalDesk.html">Employee</option>
+                <option value="digital desk.html">HigherAuthority</option>
+              </select>
+              <div>
+                <span style="width: 50px">For applicant, track your file here :
+                  <button class="btn btn-outline-success" >
+                    <a href="applicant.html" style="text-decoration: none; color:black;">
+                      Click
+                    </a>
+                  </button></span>
+              </div>
+            </div>
+            <div class="text-center text-lg-start mt-4 pt-2">
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div
+      class="d-flex flex-column flex-md-row text-center text-md-start justify-content-between py-4 px-4 px-xl-5 bg-dark">
+      <!-- Copyright -->
+      <div class="text-white mb-3 mb-md-0">
+        <div class="footer-div-1">Content owned by District Administration</div>
+        <div class="footer-div-2">Developed by Milan and Team</div>
+        <div>All Rights Reserved</div>
+      </div>
+      <!-- Copyright -->
+    </div>
+  </section>
+  <script>
+    var urlMenu = document.getElementById('roleLogin');
+    // var submitButton=getElementById('LoginButton');
+    urlMenu.onchange = function () {
+      //  submitButton.onclick=function(){
+      var roleOption = this.options[this.selectedIndex];
+      if (roleOption.value != "nothing") {
+        window.open(roleOption.value, "Employee HigherAuthority", "");
+      }
+    }
+  </script>
+</body>
+
+
+</html>

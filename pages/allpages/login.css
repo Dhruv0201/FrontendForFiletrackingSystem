@@ -1,0 +1,29 @@
+.divider:after,
+.divider:before {
+content: "";
+flex: 1;
+height: 1px;
+background: #eee;
+}
+.h-custom {
+height: calc(100% - 73px);
+}
+@media (max-width: 450px) {
+.h-custom {
+height: 100%;
+}
+}
+.emblemimage{
+    margin-left: 250px;
+    margin-top: -50px;
+}
+.titleDDO{
+    position: static;
+    margin-left: 110px;
+    margin-top: 5%;
+    padding-left: 50px;
+}
+.footer-div-1{
+    
+    margin-right: 40%;
+}
